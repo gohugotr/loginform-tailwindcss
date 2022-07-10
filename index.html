@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS ile iOS 15</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+  </head>
+  <!-- https://www.youtube.com/watch?v=nJzKi6oIvBA&list=RDCMUCOe-8z68tgw9ioqVvYM4ddQ&index=3 -->
+  <!-- https://heroicons.com/ -->
+  <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+  <body>
+    <div class="selection:bg-rose-400 selection:text-white">
+      <div class="flex items-center justify-center min-h-screen bg-rose-50">
+        <div class="flex-1 p-8">
+          <div class="mx-auto overflow-hidden bg-white shadow-xl w-80 rounded-3xl">
+            <div class="relative h-48 bg-rose-500 rounded-bl-4xl">
+              <svg
+                class="absolute bottom-0"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1440 320"
+              >
+                <path
+                  fill="#ffffff"
+                  fill-opacity="1"
+                  d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,85.3C672,75,768,85,864,122.7C960,160,1056,224,1152,245.3C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="px-10 pt-4 pb-8 bg-white rounded-tr-4xl">
+              <h1 class="text-2xl font-semibold text-gray-900">Hoşgeldiniz!</h1>
+              <form class="mt-12" action="" method="POST">
+                <div class="relative">
+                  <input
+                    id="email"
+                    name="email"
+                    type="text"
+                    class="w-full h-10 text-gray-900 placeholder-transparent border-b-2 border-gray-300 peer focus:outline-none focus:border-rose-600"
+                    placeholder="cengiz@yilmaz.com"
+                  />
+                  <label
+                    for="email"
+                    class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                    >E-posta</label
+                  >
+                </div>
+                <div class="relative mt-10">
+                  <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    class="w-full h-10 text-gray-900 placeholder-transparent border-b-2 border-gray-300 peer focus:outline-none focus:border-rose-600"
+                    placeholder="Parola"
+                  />
+                  <label
+                    for="password"
+                    class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                    >Parola</label
+                  >
+                </div>
+
+                <input
+                  type="sumbit"
+                  value="Giriş"
+                  class="block w-full px-4 py-2 mt-20 font-semibold text-center text-white rounded-md cursor-pointer bg-rose-500 hover:bg-rose-400 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-rose-500 focus:ring-opacity-80"
+                />
+              </form>
+              <a
+                href="#"
+                class="block mt-4 text-sm font-medium text-center text-rose-600 hover:underline focus:outline-none focus:ring-2 focus:ring-rose-500"
+              >
+                Şifrenizi mi unuttunuz?
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
